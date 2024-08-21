@@ -8,7 +8,7 @@ const Home = ({ isDarkMode  } : {isDarkMode : boolean}) => {
       <div className='homeup'>
       <div className="home-text">
         <h1 className="FullName">
-          I am <span className="FullName">"JuGurta HADJAM"</span>
+          I am <span className="FullName">JuGurta HADJAM</span>
         </h1>
         <h2 className="Let">
           Let me <span className="Let">build</span> your website.
