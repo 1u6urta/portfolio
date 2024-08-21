@@ -1,4 +1,3 @@
-
 import "@/_Components/componentsStyle.css";
 
 import Image from "next/image";
@@ -12,35 +11,45 @@ import { useState, useEffect } from "react";
 import { MenuIcon } from "./MenuIcon";
 import { CloseIcon } from "./CloseIcon";
 
-
-const  Navbar = ({ isDarkMode, setIsDarkMode } : {isDarkMode : boolean , setIsDarkMode : (value: boolean) => void} ) => {
+const Navbar = ({
+  isDarkMode,
+  setIsDarkMode,
+}: {
+  isDarkMode: boolean;
+  setIsDarkMode: (value: boolean) => void;
+}) => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
-  
-  const navLinks = document?.querySelector(".navLinks");
-
 
   useEffect(() => {
-    const savedMode = localStorage.getItem("theme");
-    if (savedMode) {
-      setIsDarkMode(savedMode === "dark");
+    // Access localStorage and document only in the browser environment
+    if (typeof window !== "undefined") {
+      const savedMode = localStorage.getItem("theme");
+      if (savedMode) {
+        setIsDarkMode(savedMode === "dark");
+      }
     }
-  }, []);
+  }, [setIsDarkMode]);
 
   useEffect(() => {
-    if (isDarkMode) {
-      document?.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document?.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+    if (typeof document !== "undefined") {
+      if (isDarkMode) {
+        document.documentElement.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+      }
     }
   }, [isDarkMode]);
 
   useEffect(() => {
-    if (isOpenMenu) {
-      navLinks?.classList.add("openMenu");
-    } else {
-      navLinks?.classList.remove("openMenu");
+    if (typeof document !== "undefined") {
+      const navLinks = document.querySelector(".navLinks");
+      if (isOpenMenu) {
+        navLinks?.classList.add("openMenu");
+      } else {
+        navLinks?.classList.remove("openMenu");
+      }
     }
   }, [isOpenMenu]);
 
@@ -49,11 +58,11 @@ const  Navbar = ({ isDarkMode, setIsDarkMode } : {isDarkMode : boolean , setIsDa
       <nav className="navbar">
         <Link href="/" className="logoNavbar">
           <Image
-            src={isDarkMode ? "/dark.png" :"/favicon.png" }
+            src={isDarkMode ? "/dark.png" : "/favicon.png"}
             width={60}
             height={60}
             alt="LOGO"
-          ></Image>
+          />
           <div className="textLogo">
             <p>JuGurta</p>
             <p>HADJAM</p>
@@ -97,7 +106,7 @@ const  Navbar = ({ isDarkMode, setIsDarkMode } : {isDarkMode : boolean , setIsDa
             }
           ></Switch>
           <button className="Menu" onClick={() => setIsOpenMenu(!isOpenMenu)}>
-            {isOpenMenu ? <CloseIcon></CloseIcon> : <MenuIcon></MenuIcon>}
+            {isOpenMenu ? <CloseIcon /> : <MenuIcon />}
           </button>
         </div>
       </nav>
