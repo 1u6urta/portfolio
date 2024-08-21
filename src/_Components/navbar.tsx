@@ -15,7 +15,8 @@ import { CloseIcon } from "./CloseIcon";
 
 const  Navbar = ({ isDarkMode, setIsDarkMode } : {isDarkMode : boolean , setIsDarkMode : (value: boolean) => void} ) => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
-  const navLinks = document.querySelector(".navLinks");
+  
+  const navLinks = document?.querySelector(".navLinks");
 
 
   useEffect(() => {
@@ -27,10 +28,10 @@ const  Navbar = ({ isDarkMode, setIsDarkMode } : {isDarkMode : boolean , setIsDa
 
   useEffect(() => {
     if (isDarkMode) {
-      document.documentElement.classList.add("dark");
+      document?.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
     } else {
-      document.documentElement.classList.remove("dark");
+      document?.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
   }, [isDarkMode]);
@@ -48,7 +49,7 @@ const  Navbar = ({ isDarkMode, setIsDarkMode } : {isDarkMode : boolean , setIsDa
       <nav className="navbar">
         <Link href="/" className="logoNavbar">
           <Image
-            src={isDarkMode ? "/favicon.png" : "/dark.png"}
+            src={isDarkMode ? "/dark.png" :"/favicon.png" }
             width={60}
             height={60}
             alt="LOGO"
@@ -70,13 +71,13 @@ const  Navbar = ({ isDarkMode, setIsDarkMode } : {isDarkMode : boolean , setIsDa
             </Link>
           </li>
           <li>
-            <Link className="navLink" href="/#work">
-              My Work
+            <Link className="navLink" href="/#skills">
+              My Skills
             </Link>
           </li>
           <li>
-            <Link className="navLink" href="/#skills">
-              My Skills
+            <Link className="navLink" href="/#work">
+              My Work
             </Link>
           </li>
           <li>
