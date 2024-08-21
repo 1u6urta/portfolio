@@ -29,6 +29,7 @@
     width: 50%;
     justify-content: space-between;
     align-items: center;
+    transition: all .05s ease;
   }
   .navLink {
     transition: all 0.5s ease;
@@ -45,6 +46,7 @@
   }
   .Menu {
     display: none;
+    transition: all .05s ease;
   }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -56,12 +58,16 @@
 
   .home {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+  	background-image: linear-gradient(5deg, var(--second-color) -120%, var(--bg-color));	
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
   }
   .homeup {
-    height: 60vh;
+    height: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
   }
   .home-text {
@@ -101,11 +107,11 @@
   
   .shape {
     position: absolute;
-    top: 25%; 
-    left: 50%; 
+    top: 20%; 
+    left: 40%; 
     transform: translate(-50%, -50%) scale(1.2); 
     z-index: 0; 
-    width: 80%;
+    width: 100%;
   }
   
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -136,6 +142,38 @@
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* AboutMe */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.about {
+  background-color: var(--bg-color); 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.boxabout {
+  display: flex;
+  background-image: linear-gradient(120deg, var(--second-color) -70%, var(--bg-color)) ;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  margin: 5px 0s;
+  width: 95%;
+  justify-content: space-between;
+  box-shadow: 15px 15px 15px var(--shadow-color);
+}
+.boxabout .ImageAbout {
+  border-radius: 20px 0 0 20px;
+  width: 40%;
+}
+.aboutText {
+  text-align: justify;
+  color: var(--text-color);
+  padding: 2px 5%;
+}
+.aboutMe {
+  font-size: var(--big-font);
+  font-weight: 800;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Media */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 @media (max-width: 900px) {
@@ -158,6 +196,7 @@
         align-items: center;
         padding: 0 50px;
         box-shadow: 35px 3px 15px var(--shadow-color);
+        transition: all .05s ease;
   }
   .navLink {        
     float: none;
@@ -170,11 +209,15 @@
   }
   .Menu {
     display: block;
+    transition: all .05s ease;
   }
   /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
   /* Home */
   /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-@keyframes moveLeftToRight {
+  .home {
+    min-height: 525px;
+  }
+  @keyframes moveLeftToRight {
   0% { transform: translateX(-1750%); } 
   50% { transform: translateX(50%); }
   100% { transform: translateX(-1750%) ;}
@@ -187,5 +230,23 @@
     50% { transform: translateX(50%); }
     100% { transform: translateX(-2250%) ;}
   }
-  
+  .homeup{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .home-img  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .home-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+  }
 }

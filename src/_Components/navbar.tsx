@@ -48,7 +48,7 @@ const  Navbar = ({ isDarkMode, setIsDarkMode } : {isDarkMode : boolean , setIsDa
       <nav className="navbar">
         <Link href="/" className="logoNavbar">
           <Image
-            src={isDarkMode ? "/favicon.png" : "/dark.png"}
+            src={isDarkMode ? "/dark.png" :"/favicon.png" }
             width={60}
             height={60}
             alt="LOGO"
@@ -70,13 +70,13 @@ const  Navbar = ({ isDarkMode, setIsDarkMode } : {isDarkMode : boolean , setIsDa
             </Link>
           </li>
           <li>
-            <Link className="navLink" href="/#work">
-              My Work
+            <Link className="navLink" href="/#skills">
+              My Skills
             </Link>
           </li>
           <li>
-            <Link className="navLink" href="/#skills">
-              My Skills
+            <Link className="navLink" href="/#work">
+              My Work
             </Link>
           </li>
           <li>
