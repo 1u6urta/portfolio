@@ -60,27 +60,27 @@ const Navbar = ({
         </Link>
         <ul className="navLinks">
           <li>
-            <Link className="navLink" onClick={() => setIsOpenMenu(!isOpenMenu)} href="/">
+            <Link className="navLink" onClick={() => setIsOpenMenu(!isOpenMenu)} href="./">
               Home
             </Link>
           </li>
           <li>
-            <Link className="navLink" onClick={() => setIsOpenMenu(!isOpenMenu)} href="/#about">
+            <Link className="navLink" onClick={() => setIsOpenMenu(!isOpenMenu)} href="./#about">
               About Me
             </Link>
           </li>
           <li>
-            <Link className="navLink" onClick={() => setIsOpenMenu(!isOpenMenu)} href="/#skills">
+            <Link className="navLink" onClick={() => setIsOpenMenu(!isOpenMenu)} href="./#skills">
               My Skills
             </Link>
           </li>
           <li>
-            <Link className="navLink" onClick={() => setIsOpenMenu(!isOpenMenu)} href="/#work">
+            <Link className="navLink" onClick={() => setIsOpenMenu(!isOpenMenu)} href="./#works">
               My Work
             </Link>
           </li>
           <li>
-            <Link className="navLink" onClick={() => setIsOpenMenu(!isOpenMenu)} href="/#contact">
+            <Link className="navLink" onClick={() => setIsOpenMenu(!isOpenMenu)} href="./#contact">
               Contact Me
             </Link>
           </li>
