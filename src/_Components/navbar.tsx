@@ -21,22 +21,12 @@ const Navbar = ({
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   useEffect(() => {
-    // Access localStorage and document only in the browser environment
-    if (typeof window !== "undefined") {
-      const savedMode = localStorage.getItem("theme");
-      if (savedMode) {
-        setIsDarkMode(savedMode === "dark");
-      }
-    }
-  }, [setIsDarkMode]);
-
-  useEffect(() => {
     if (typeof document !== "undefined") {
       if (isDarkMode) {
-        document.documentElement.classList.add("dark");
+        document.documentElement.classList.remove("light");
         localStorage.setItem("theme", "dark");
       } else {
-        document.documentElement.classList.remove("dark");
+        document.documentElement.classList.add("light");
         localStorage.setItem("theme", "light");
       }
     }
