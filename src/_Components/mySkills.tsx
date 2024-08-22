@@ -819,7 +819,7 @@ function MySkills({
               {icon.svg}
             </div>
             <div className="content">
-              <Circular value={icon.value} fill={isDarkMode? "#FFFFFF" :  "#000000"  } ></Circular>
+              <Circular value={icon.value} fill={isDarkMode? "#01D4FF" :  "#1501ff"  } ></Circular>
             </div>
           </div>
         ))}
