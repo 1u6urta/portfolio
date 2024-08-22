@@ -3,6 +3,7 @@ import Navbar from "@/_Components/navbar";
 import { useState } from 'react';
 import Home from '@/_Components/home';
 import AboutMe from "@/_Components/aboutMe";
+import MySkills from "@/_Components/mySkills";
 
 const Index = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -11,7 +12,8 @@ const Index = () => {
     <>
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Home isDarkMode={isDarkMode} />
-      <AboutMe isDarkMode={isDarkMode} ></AboutMe>
+      <AboutMe isDarkMode={isDarkMode} fill={isDarkMode ? "#000000" : "#FFFFFF" } height="32px" width="32px" ></AboutMe>
+      <MySkills isDarkMode={isDarkMode} fill={isDarkMode ? "#000000" : "#FFFFFF" } height="32px" width="32px"></MySkills>
     </>
   );
 };
