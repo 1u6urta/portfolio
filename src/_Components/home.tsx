@@ -18,7 +18,7 @@ const Home = ({ isDarkMode  } : {isDarkMode : boolean}) => {
         </p>
       </div>
       <div className="home-img">
-        <Image className="Image" src="./j.jpg" width={200} height={200} alt="" />
+        <Image className="Image" src="/j.jpg" width={200} height={200} alt="" />
       </div>
       </div>
       <div className="shape">
