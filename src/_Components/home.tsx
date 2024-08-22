@@ -18,14 +18,14 @@ const Home = ({ isDarkMode  } : {isDarkMode : boolean}) => {
         </p>
       </div>
       <div className="home-img">
-        <Image className="Image" src="/j.jpg" width={200} height={200} alt="" />
+        <Image className="Image" src="./j.jpg" width={200} height={200} alt="" />
       </div>
       </div>
       <div className="shape">
-          <RandomShape fill={isDarkMode ? "#FFFFFF" : "#000000" }></RandomShape>
+          <RandomShape fill={isDarkMode ? "#000000" : "#FFFFFF" }></RandomShape>
       </div>
       <div className="icons">
-          <Icons fill={isDarkMode ? "#000000" : "#FFFFFF" } height="50px" width="50px" />
+          <Icons fill={isDarkMode ? "#FFFFFF" : "#000000" } height="50px" width="50px" />
       </div>
     </section>
   );

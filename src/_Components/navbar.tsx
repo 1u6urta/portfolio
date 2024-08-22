@@ -58,7 +58,7 @@ const Navbar = ({
       <nav className="navbar">
         <Link href="/" className="logoNavbar">
           <Image
-            src={isDarkMode ? "/dark.png" : "/favicon.png"}
+            src={isDarkMode ?  "./favicon.png" : "./dark.png"}
             width={60}
             height={60}
             alt="LOGO"
@@ -102,7 +102,7 @@ const Navbar = ({
             color="secondary"
             onClick={() => setIsDarkMode(!isDarkMode)}
             thumbIcon={({ isSelected }: { isSelected: any }) =>
-              isSelected ? <SunIcon /> : <MoonIcon />
+              isSelected ? <MoonIcon />  : <SunIcon />
             }
           ></Switch>
           <button className="Menu" onClick={() => setIsOpenMenu(!isOpenMenu)}>

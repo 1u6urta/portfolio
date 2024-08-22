@@ -16,7 +16,8 @@
     "framer-motion": "^11.3.29",
     "next": "^14.2.6",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "simple-swizzle": "^0.2.2"
   },
   "devDependencies": {
     "@types/node": "20.16.1",
