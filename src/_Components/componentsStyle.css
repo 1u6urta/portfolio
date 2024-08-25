@@ -16,6 +16,7 @@
 .logoNavbar {
   display: flex;
   align-items: center;
+  justify-content: start;
 
 }
 .textLogo {
@@ -118,7 +119,28 @@ span:hover {
   z-index: 0;
   width: 100%;
 }
+.vector01 {
+  position: absolute;
+  top: 20%;
+  right: 50%;
+  
+}
+.vector02 {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+}
+.vector03 {
+  position: absolute;
+  top: 60%;
+  right: 70%;
+}
+.vector04 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
 
+}
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Icons */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -139,6 +161,9 @@ span:hover {
   margin-left: 40px;
   animation: moveLeftToRight 30s linear infinite;
 }
+.icons:hover .icon {
+  animation-play-state: paused; /* Pause animation on hover */
+}
 
 @keyframes moveLeftToRight {
   0% {
@@ -155,47 +180,104 @@ span:hover {
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* AboutMe */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-.about {
-  background-color: var(--bg-color);
-  display: flex;
+
+.about-me .img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-me .container {
+  max-width: 1300px;
+  margin: 0px auto 0px auto;
+  padding: 0px 5%;
+}
+
+
+.about-me {
   background-image: linear-gradient(
     180deg,
     var(--second-color) -120%,
     var(--bg-color)
   );
-  justify-content: center;
+  padding-top: 50px;
 }
-.boxabout {
+.about-me .about-me-container {
+  position: relative;
+}
+.about-me .about-me-container .about-me-title {
+  font-size: 55px;
+  color: var(--main-color);
+  margin: 10px 10% ;
+  font-weight: 700;
+}
+.about-me-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-me-flex-container .about-me-image {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.about-me-flex-container .about-me-image .back-div {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  background-color: #013747;
+  width: 80%;
+  height: 80%;
+}
+.about-me-flex-container .about-me-image .black-image {
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+}
+.about-me-flex-container .about-me-image .black-image img {
+  height: 100%;
+  border-radius: 20px;
+}
+.about-me-flex-container .about-me-image .main-image {
+  width: 70%;
+  height: 70%;
+  overflow: hidden;
+  position: absolute;
+  left: 25%;
+  top: 5%;
+  box-shadow: rgb(0, 0, 0) 0px 7px 50px 0px;
+  transition: all 0.2s ease-out;
+}
+.about-me-flex-container .about-me-image .main-image:hover {
+  transform-origin: top center;
+  transform: scale(1.5);
+  border-radius: 25px;
+}
+.about-me-flex-container .about-me-image .main-image img {
+  transform-origin: center center;
+  transform: scale(2);
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.2s ease-out;
+}
+.about-me-flex-container .about-me-image .main-image img:hover {
+  transform: scale(1);
+}
+.about-me-flex-container .about-me-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  background-color: var(--shadow-color);
-  border: 2px solid transparent;
-  border-radius: 20px;
-  margin: 5px 0s;
-  width: 90%;
+  align-items: center;
+  gap: 50px;
+  flex: 0 0 40%;
+}
+.about-me-flex-container .about-me-content .logo {
+  max-width: 200px;
+}
+.about-me-flex-container .about-me-content .text {
   color: var(--text-color);
-  padding: 50px 5%;
   text-align: justify;
-  box-shadow: 15px 15px 15px var(--shadow-color);
-}
-
-.aboutMe {
-  font-size: var(--middle-font);
-  font-weight: 800;
-  margin: 25px 0;
-  width: 100%;
-}
-.aboutCount {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-.biography {
-  font-size: var(--small-font);
-  font-weight: normal;
-  font-style: italic;
+  font-weight: 600;
+  font-size: 18px;
 }
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* MySkills */
@@ -319,6 +401,32 @@ span:hover {
       transform: translateX(50%);
     }
   }
+  .vector01 {
+    position: absolute;
+    top: 12%;
+    right: 50%;
+    
+  }
+  .vector03 {
+    position: absolute;
+    top: 30%;
+    right: 45%;
+  }
+  /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+  /* AboutMe */
+  /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+  .about-me .about-me-container {
+    padding-bottom: 100px;
+  }
+  .about-me-flex-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .about-me-flex-container .about-me-content {
+    flex-direction: row-reverse;
+  }
 }
 @media (max-width: 600px) {
   .icon {
@@ -354,7 +462,40 @@ span:hover {
     justify-content: center;
     padding: 0 5%;
   }
+  .vector01 {
+    position: absolute;
+    top: 15%;
+    right: 80%;
+    
+  }
+  .vector02 {
+    position: absolute;
+    top: 15%;
+  }
+  .vector03 {
+    display: none;
+  }
+  
+.vector04 {
+  position: absolute;
+  top: 0;
+  left: 30%;
+
+}
   /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
   /* AboutMe */
   /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+  .about-me .about-me-container .about-me-title {
+    font-size: 30px;
+  }
+  .about-me-flex-container .about-me-image {
+    width: 300px;
+    height: 300px;
+  }
+  .about-me-flex-container .about-me-content .logo {
+    display: none;
+  }
+  .about-me-flex-container .about-me-content .text {
+    font-size: 16px;
+  }
 }

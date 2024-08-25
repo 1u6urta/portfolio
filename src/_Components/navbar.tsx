@@ -60,7 +60,7 @@ const Navbar = ({
         </Link>
         <ul className="navLinks">
           <li>
-            <Link className="navLink" onClick={() => setIsOpenMenu(!isOpenMenu)} href="./">
+            <Link className="navLink" onClick={() => setIsOpenMenu(!isOpenMenu)} href="./#">
               Home
             </Link>
           </li>
