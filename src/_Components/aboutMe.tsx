@@ -11,7 +11,7 @@ const AboutMe = ({
   height: string;
 }) => {
   return (
-    <section className="about-me" id="about-me">
+    <section className="about-me" id="about">
       <div className="container">
         <div className="about-me-container">
           <div className="about-me-title">So, Who I&apos;am</div>
