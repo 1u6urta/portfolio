@@ -28,8 +28,8 @@
 }
 .navLinks {
   display: flex;
-  width: 50%;
-  justify-content: space-between;
+  width: 60%;
+  justify-content: space-around;
   align-items: center;
   transition: all 0.05s ease;
 }
@@ -44,7 +44,6 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 25%;
 }
 .Menu {
   display: none;
@@ -55,7 +54,7 @@
 /* HOME */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 section {
-  padding: 90px 0 0;
+  padding: 80px 0 0;
 }
 
 .home {
@@ -154,7 +153,7 @@ span:hover {
   width: 100%;
 }
 
-.icon {
+.icons .icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,16 +199,9 @@ span:hover {
     var(--second-color) -120%,
     var(--bg-color)
   );
-  padding-top: 50px;
 }
 .about-me .about-me-container {
   position: relative;
-}
-.about-me .about-me-container .about-me-title {
-  font-size: 55px;
-  color: var(--main-color);
-  margin: 10px 10% ;
-  font-weight: 700;
 }
 .about-me-flex-container {
   display: flex;
@@ -285,13 +277,16 @@ span:hover {
 .skills {
   background-color: var(--bg-color);
 }
-.titile {
-  font-size: var(--middle-font);
+.title {
   font-weight: 800;
-  text-align: center;
-  width: 100%;
+  font-size: var(--title-font);
+  margin: 0 0 0 10%;
+  font-weight: 700;
 }
-.container {
+h1 .title {
+  margin: 0 ;
+}
+.skills .container {
   /* position : relative; */
   width : 100%;
   display : flex;
@@ -301,7 +296,7 @@ span:hover {
   padding : 30px;  
 }
 
-.container .card {
+.skills .container .card {
   /* position: relative; */
   width : 80px;
   height : 70px;  
@@ -320,7 +315,7 @@ span:hover {
   transition : 0.3s ease-in-out;
   border-radius : 15px;
 }
-.container .card:hover {
+.skills .container .card:hover {
   min-height : 170px;    
 }
 .infoup {
@@ -344,6 +339,148 @@ span:hover {
    opacity : 1;
    transition-delay: 0.2s; 
 }
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* MyWorks */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.works {
+  background-color: var(--bg-color);
+}
+.works .container {
+  /* position : relative; */
+  width : 100%;
+  display : flex;
+  align-items : center;
+  justify-content : space-around;
+  flex-wrap : wrap;
+  padding : 30px;
+}
+.projet {
+    --img-scale: 1.001;
+    --link-icon-translate: -20px;
+    --link-icon-opacity: 0;
+    position: relative;
+    max-width: 400px;
+    min-height: 350px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    border-radius: 16px;
+    box-shadow: none;
+    background-image: linear-gradient(
+    180deg,
+    var(--second-color) 10%,
+    var(--bg-color)
+  );
+    transform-origin: center;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+/* basic article elements styling */
+.projet h2 {
+  font-size: 1.9rem;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+  transition: color 0.3s ease-out;
+}
+.projet-body p {
+  margin-top: -60px;
+  display: none;
+  transition: transform 0.4s ease-in-out;
+}
+.projet figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 18 / 9;
+  overflow: hidden;
+}
+
+.projet  .img {
+  width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+.projet-body {
+  text-align: justify;
+  padding: 5px 24px;
+}
+
+.projet a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.projet a:focus {
+  outline: 1px dotted var(--main-color);
+}
+
+.projet a .icon {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  transform: translateX(var(--link-icon-translate));
+  opacity: var(--link-icon-opacity);
+  transition: all 0.3s;
+}
+.projet:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --link-icon-opacity: 1;
+  --link-icon-translate : 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.projet :hover .projet-body p {
+  margin-top: 0px;
+  display: block;
+  transition: transform 0.4s ease-in-out;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ContactMe */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.contactMe {
+  background-color: var(--bg-color);
+  padding-bottom: 50px;
+}
+.contactMe .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 6%;
+}
+.text-containe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+  max-width: 60%;
+}
+.icons-contiane {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-left: 10px;
+}
+.link-contact {
+  display: flex;
+  padding: 5px 0;
+  justify-content: center; 
+}
+.icon-contact {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+  text-align: center;
+}
+.icon-contact svg {
+  width: 100%;
+  height: 100%;
+}
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Media */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -358,7 +495,7 @@ span:hover {
   .openMenu {
     display: block;
     position: fixed;
-    width: 70%;
+    width: 100%;
     height: 100%;
     background: var(--bg-color);
     top: 75px;
@@ -387,7 +524,7 @@ span:hover {
     min-height: 525px;
   }
 
-  .icon {
+  .icons .icon {
     animation: moveLeftToRight 40s linear infinite;
   }
   @keyframes moveLeftToRight {
@@ -424,12 +561,9 @@ span:hover {
     align-items: center;
     gap: 50px;
   }
-  .about-me-flex-container .about-me-content {
-    flex-direction: row-reverse;
-  }
 }
 @media (max-width: 600px) {
-  .icon {
+  .icons .icon {
     animation: moveLeftToRight 50s linear infinite;
   }
   @keyframes moveLeftToRight {
@@ -492,10 +626,16 @@ span:hover {
     width: 300px;
     height: 300px;
   }
-  .about-me-flex-container .about-me-content .logo {
-    display: none;
-  }
   .about-me-flex-container .about-me-content .text {
     font-size: 16px;
   }
+  .contactMe .container {
+    flex-direction: column;
+  }
+.text-containe {
+  max-width: 100%;
+}
+.icons-contiane {
+  padding: 10px 0;
+}
 }

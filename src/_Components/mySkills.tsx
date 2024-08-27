@@ -811,7 +811,7 @@ function MySkills({
   const sortedIcons = iconNames.sort((a, b) => b.value - a.value);
   return (
     <section className="skills section" id="skills">
-      <h1 className="titile">My Skills</h1>
+      <h1 className="title">MY <span className="title" >SKILLS</span></h1>
       <div className="container">
         {sortedIcons.map((icon, index) => (
           <div className="card" key={icon.name}>

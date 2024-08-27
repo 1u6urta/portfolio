@@ -76,7 +76,7 @@ const Navbar = ({
           </li>
           <li>
             <Link className="navLink" onClick={() => setIsOpenMenu(!isOpenMenu)} href="./#works">
-              My Work
+              My Works
             </Link>
           </li>
           <li>

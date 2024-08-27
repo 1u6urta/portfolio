@@ -11,11 +11,10 @@ const AboutMe = ({
   height: string;
 }) => {
   return (
-    <section className="about-me" id="about">
+    <section className="about-me section" id="about">
+      <h1 className="title">SO, <span className="title" >WHO I&apos;m</span></h1>
       <div className="container">
         <div className="about-me-container">
-          <div className="about-me-title">So, Who I&apos;am</div>
-
           <div className="about-me-flex-container">
             <div className="about-me-image">
               <div className="back-div"></div>
