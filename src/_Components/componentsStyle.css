@@ -468,11 +468,12 @@ h1 .title {
 .link-contact {
   display: flex;
   padding: 5px 0;
+  align-items: center;
   justify-content: center; 
 }
 .icon-contact {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   margin-right: 10px;
   text-align: center;
@@ -638,4 +639,14 @@ h1 .title {
 .icons-contiane {
   padding: 10px 0;
 }
+}
+@media (max-width : 400px) {
+  .text-link {
+    display: none;
+  }
+  .icons-contiane {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
