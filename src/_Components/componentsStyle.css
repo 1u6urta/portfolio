@@ -17,7 +17,6 @@
   display: flex;
   align-items: center;
   justify-content: start;
-
 }
 .textLogo {
   display: flex;
@@ -122,7 +121,6 @@ span:hover {
   position: absolute;
   top: 20%;
   right: 50%;
-  
 }
 .vector02 {
   position: absolute;
@@ -138,7 +136,6 @@ span:hover {
   position: absolute;
   top: 5px;
   left: 5px;
-
 }
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Icons */
@@ -183,7 +180,7 @@ span:hover {
 .about-me .img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .about-me .container {
@@ -191,7 +188,6 @@ span:hover {
   margin: 0px auto 0px auto;
   padding: 0px 5%;
 }
-
 
 .about-me {
   background-image: linear-gradient(
@@ -249,7 +245,7 @@ span:hover {
   transform-origin: center center;
   transform: scale(2);
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: all 0.2s ease-out;
 }
 .about-me-flex-container .about-me-image .main-image img:hover {
@@ -284,39 +280,38 @@ span:hover {
   font-weight: 700;
 }
 h1 .title {
-  margin: 0 ;
+  margin: 0;
 }
 .skills .container {
-  /* position : relative; */
-  width : 100%;
-  display : flex;
-  align-items : center;
-  justify-content : center;
-  flex-wrap : wrap;
-  padding : 30px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 6% 0 6%;
+  padding: 30px;
 }
 
 .skills .container .card {
   /* position: relative; */
-  width : 80px;
-  height : 70px;  
+  width: 80px;
+  height: 70px;
   background-image: linear-gradient(
     180deg,
     var(--main-color) 10%,
     var(--bg-color)
   );
-  margin : 30px 10px;
-  padding : 20px 15px;
-  color : var(--text-color);
-  display : flex;
-  flex-direction : column;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  box-shadow : 0 5px 20px var(--shadow-color);
-  transition : 0.3s ease-in-out;
-  border-radius : 15px;
+  box-shadow: 0 5px 20px var(--shadow-color);
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
 }
 .skills .container .card:hover {
-  min-height : 170px;    
+  min-height: 170px;
 }
 .infoup {
   display: flex;
@@ -324,22 +319,20 @@ h1 .title {
   justify-content: center;
 }
 .container .card .content {
-  position : relative;
-  top : 0px;
-  padding : 10px 15px;
-  text-align : center;
-  visibility : hidden;
-  opacity : 0;
-  transition : 0.3s ease-in-out;
-    
+  position: relative;
+  top: 0px;
+  padding: 10px 15px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
 .container .card:hover .content {
-   margin-top : 30px;
-   visibility : visible;
-   opacity : 1;
-   transition-delay: 0.2s; 
+  margin-top: 30px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
 }
-
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* MyWorks */
@@ -349,32 +342,32 @@ h1 .title {
 }
 .works .container {
   /* position : relative; */
-  width : 100%;
-  display : flex;
-  align-items : center;
-  justify-content : space-around;
-  flex-wrap : wrap;
-  padding : 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 30px;
 }
 .projet {
-    --img-scale: 1.001;
-    --link-icon-translate: -20px;
-    --link-icon-opacity: 0;
-    position: relative;
-    max-width: 400px;
-    min-height: 350px;
-    margin-bottom: 50px;
-    padding-bottom: 10px;
-    border-radius: 16px;
-    box-shadow: none;
-    background-image: linear-gradient(
+  --img-scale: 1.001;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  position: relative;
+  max-width: 400px;
+  min-height: 350px;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  border-radius: 16px;
+  box-shadow: none;
+  background-image: linear-gradient(
     180deg,
     var(--second-color) 10%,
     var(--bg-color)
   );
-    transform-origin: center;
-    transition: all 0.4s ease-in-out;
-    overflow: hidden;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
 }
 /* basic article elements styling */
 .projet h2 {
@@ -395,7 +388,7 @@ h1 .title {
   overflow: hidden;
 }
 
-.projet  .img {
+.projet .img {
   width: 100%;
   transform-origin: center;
   transform: scale(var(--img-scale));
@@ -429,8 +422,9 @@ h1 .title {
 .projet:has(:hover, :focus) {
   --img-scale: 1.1;
   --link-icon-opacity: 1;
-  --link-icon-translate : 1;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  --link-icon-translate: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .projet :hover .projet-body p {
   margin-top: 0px;
@@ -446,41 +440,41 @@ h1 .title {
 }
 .contactMe .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding: 0 6%;
 }
 .text-containe {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: justify;
-  max-width: 60%;
+  max-width: 40%;
 }
 .icons-contiane {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: start;
+  margin-left: 10%;
   align-items: start;
-  margin-left: 10px;
+  max-height: 200px;
 }
 .link-contact {
   display: flex;
   padding: 5px 0;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 .icon-contact {
-  width: 40px;
-  height: 40px;
+  
   border-radius: 50%;
-  margin-right: 10px;
+  margin: 5px;
   text-align: center;
 }
 .icon-contact svg {
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
 }
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Media */
@@ -543,7 +537,6 @@ h1 .title {
     position: absolute;
     top: 12%;
     right: 50%;
-    
   }
   .vector03 {
     position: absolute;
@@ -601,7 +594,6 @@ h1 .title {
     position: absolute;
     top: 15%;
     right: 80%;
-    
   }
   .vector02 {
     position: absolute;
@@ -610,13 +602,12 @@ h1 .title {
   .vector03 {
     display: none;
   }
-  
-.vector04 {
-  position: absolute;
-  top: 0;
-  left: 30%;
 
-}
+  .vector04 {
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
   /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
   /* AboutMe */
   /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -633,20 +624,14 @@ h1 .title {
   .contactMe .container {
     flex-direction: column;
   }
-.text-containe {
-  max-width: 100%;
-}
-.icons-contiane {
-  padding: 10px 0;
-}
-}
-@media (max-width : 400px) {
-  .text-link {
-    display: none;
+  .text-containe {
+    max-width: 100%;
+    margin: 0 6%;
   }
   .icons-contiane {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 10px 0;
   }
 }
