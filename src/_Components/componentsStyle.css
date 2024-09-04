@@ -632,6 +632,7 @@ h1 .title {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 0%;
     padding: 10px 0;
   }
 }
