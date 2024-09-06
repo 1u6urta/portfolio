@@ -632,7 +632,7 @@ h1 .title {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 0 6%;
+    margin: 0 6%;
     padding: 10px 0;
   }
 }
