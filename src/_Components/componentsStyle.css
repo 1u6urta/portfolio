@@ -483,6 +483,7 @@ h1 .title {
   position: relative;
   text-align: center;
   padding: 10px 0;
+  width: 100%;
 }
 .background {
   position: absolute;
