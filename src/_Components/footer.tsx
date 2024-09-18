@@ -24,8 +24,8 @@ const Footer = ({ fill }: { fill: string }) => {
       <p className="legal"> 2024 All rights reserved</p>
       <div className="background">
         <svg
-          width="1920"
-          height="344"
+          width="100%"
+          height="auto"
           viewBox="0 0 1920 344"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
