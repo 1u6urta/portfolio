@@ -467,7 +467,6 @@ h1 .title {
   justify-content: center;
 }
 .icon-contact {
-  
   border-radius: 50%;
   margin: 5px;
   text-align: center;
@@ -475,6 +474,34 @@ h1 .title {
 .icon-contact svg {
   width: 40px;
   height: 40px;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Footer */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.sectionFooter {
+  background-color: var(--bg-color); 
+  position: relative;
+  text-align: center;
+  padding: 10px 0;
+}
+.background {
+  position: absolute;
+  bottom: 0;
+}
+.links {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.links li {
+  margin: 20px;
+}
+.links li:hover {
+  color: var(--main-color);
+}
+.legal {
+  color: #aaa;
 }
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Media */
@@ -634,5 +661,11 @@ h1 .title {
     flex-wrap: wrap;
     margin: 0 6%;
     padding: 10px 0;
+  }
+  .links {
+    flex-direction: column;
+  }
+  .links li {
+    margin: 10px 0;
   }
 }

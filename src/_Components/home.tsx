@@ -39,14 +39,14 @@ const Home = ({ isDarkMode }: { isDarkMode: boolean }) => {
             cy="13.3928"
             r="12.2783"
             stroke={isDarkMode ? "#FFFFFF" : "#000000"}
-            stroke-width="1.99107"
+            strokeWidth="1.99107"
           />
           <circle
             cx="20.7262"
             cy="26.6666"
             r="12.942"
             stroke={isDarkMode ? "#FFFFFF" : "#000000"}
-            stroke-width="0.66369"
+            strokeWidth="0.66369"
           />
         </svg>
           </div>
@@ -74,14 +74,14 @@ const Home = ({ isDarkMode }: { isDarkMode: boolean }) => {
           <path
             d="M21.5253 51.8822L22.4266 13.3829L55.3172 33.4131L21.5253 51.8822Z"
             stroke={isDarkMode ? "#FFFFFF" : "#000000"}
-            stroke-width="1.99107"
-            stroke-linejoin="round"
+            strokeWidth="1.99107"
+            strokeLinejoin="round"
           />
           <path
             d="M24.5487 66.9533L25.5038 26.1557L60.3581 47.3816L24.5487 66.9533Z"
             stroke={isDarkMode ? "#FFFFFF" : "#000000"}
-            stroke-width="0.66369"
-            stroke-linejoin="round"
+            strokeWidth="0.66369"
+            strokeLinejoin="round"
           />
         </svg>
       </div>
@@ -98,14 +98,14 @@ const Home = ({ isDarkMode }: { isDarkMode: boolean }) => {
             cy="13.3928"
             r="12.2783"
             stroke={isDarkMode ? "#FFFFFF" : "#000000"}
-            stroke-width="1.99107"
+            strokeWidth="1.99107"
           />
           <circle
             cx="20.7262"
             cy="26.6666"
             r="12.942"
             stroke={isDarkMode ? "#FFFFFF" : "#000000"}
-            stroke-width="0.66369"
+            strokeWidth="0.66369"
           />
         </svg>
       </div>
@@ -122,14 +122,14 @@ const Home = ({ isDarkMode }: { isDarkMode: boolean }) => {
             cy="13.3928"
             r="12.2783"
             stroke={isDarkMode ? "#FFFFFF" : "#000000"}
-            stroke-width="1.99107"
+            strokeWidth="1.99107"
           />
           <circle
             cx="20.7262"
             cy="26.6666"
             r="12.942"
             stroke={isDarkMode ? "#FFFFFF" : "#000000"}
-            stroke-width="0.66369"
+            strokeWidth="0.66369"
           />
         </svg>
       </div>

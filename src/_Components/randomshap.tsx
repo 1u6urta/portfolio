@@ -12,12 +12,12 @@ const RandomShape = ({fill} : {fill : string}) => {
           {" "}
           <stop
             id="stop1"
-            stop-color="rgba(1, 212, 255, 0.17)"
+            stopColor="rgba(1, 212, 255, 0.17)"
             offset="0%"
           ></stop>{" "}
           <stop
             id="stop2"
-            stop-color={fill}
+            stopColor={fill}
             offset="100%"
           ></stop>{" "}
         </linearGradient>{" "}
@@ -28,7 +28,7 @@ const RandomShape = ({fill} : {fill : string}) => {
         width="100%"
         height="100%"
         transform="translate(50 50)"
-        stroke-width="0"
+        strokeWidth="0"
         stroke="url(#sw-gradient)"
       ></path>
     </svg>

@@ -18,7 +18,8 @@ const Index = () => {
       <MySkills isDarkMode={isDarkMode} fill={isDarkMode ? "#FFFFFF" : "#000000" } height="32px" width="32px"></MySkills>
       <MyWork></MyWork>
       <ContactMe fill={isDarkMode ? "#FFFFFF" : "#000000" } ></ContactMe>
-      {/* <Footer></Footer> */}
+      
+      <Footer fill={isDarkMode ? "#FFFFFF" : "#000000" }></Footer>
     </>
   );
 };
