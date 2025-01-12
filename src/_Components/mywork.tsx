@@ -16,6 +16,18 @@ const MyWork = () => {
       discription: "Streamline food product inventory management effortlessly.",
       link: "https://1u6urta.github.io/StockIn/",
     },
+    {
+      title: "ShopMe",
+      src: "./ShopeMe.png",
+      discription: "",
+      link: "https://1u6urta.github.io/ShopMe/",
+    },
+    {
+      title: "Nexcent",
+      src: "./Nexcent.png",
+      discription: "This is a web project designed using Figma and developed with Nextjs ",
+      link: "https://1u6urta.github.io/Nexcent/",
+    },
   ];
   return (
     <section className="works section" id="works">
