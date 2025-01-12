@@ -18,7 +18,7 @@ const MyWork = () => {
     },
     {
       title: "ShopMe",
-      src: "./ShopeMe.png",
+      src: "./ShopMe.png",
       discription: "",
       link: "https://1u6urta.github.io/ShopMe/",
     },
